@@ -9,12 +9,12 @@ import dashboard from './dashboard/dashboard'
 export default function main() {
     return (
         <div>
-            <Route path="/" exact component={home}/>
-            <Route path="/login" exact component={login}/>
-            <Route path="/register" exact component={register}/>
-            <Route path="/link" exact component={flink}/>
-            <Route path="/dashboard" exact component={dashboard}/>
-            <Route path="/dashboard/category/:name" exact component={dashboard}/>
+            <Route path="/InfaKart/" exact component={home}/>
+            <Route path="/InfaKart/login" exact component={login}/>
+            <Route path="/InfaKart/register" exact component={register}/>
+            <Route path="/InfaKart/link" exact component={flink}/>
+            <Route path="/InfaKart/dashboard" exact component={dashboard}/>
+            <Route path="/InfaKart/dashboard/category/:name" exact component={dashboard}/>
         </div>
     )
 }
