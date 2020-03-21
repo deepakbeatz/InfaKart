@@ -7,7 +7,7 @@ import Footer from '../../../components/footer/footer'
 export default function flink() {
     return (
         <div>
-            <Header left={[<Link to="/"><i class="fas fa-home"></i> Home</Link>]} center={[]} right={[<Link to="/register"><i class="fas fa-user-plus"></i> Register</Link>]} />
+            <Header left={[<Link to="/InfaKart/"><i class="fas fa-home"></i> Home</Link>]} center={[]} right={[<Link to="/InfaKart/register"><i class="fas fa-user-plus"></i> Register</Link>]} />
             <Fform />
             <Footer />
         </div>
