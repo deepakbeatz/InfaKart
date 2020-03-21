@@ -1,0 +1,37 @@
+.sidebar{
+    position:fixed;
+    top:0%;
+    z-index:3;
+    left:0%;
+    width:0px;
+    height:100%;
+    overflow-x: hidden;
+    background-color: orange;
+    transition: 0.45s;
+    padding-top:20px;
+    cursor:pointer;
+}
+.sidebar a{
+    text-decoration: none;
+    padding:10px 10px 1px 40px;
+    color: black;
+    display:block;
+    transition:0.3s;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0px;
+    right: 25px;
+    font-size: 35px;
+    margin-left: 50px;
+  }
+
+.sidebar a:hover{
+    font-weight: bold;
+}
+
+.sidebar a:active{
+    text-decoration: none;
+    color: black;
+}
