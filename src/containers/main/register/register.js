@@ -7,7 +7,7 @@ import Rform from '../../../components/rform/rform'
 export default function register() {
     return (
         <div>
-            <Header left={[<Link to="/"><i class="fas fa-home"></i> Home</Link>]} center={[]} right={[<Link to="/login"><i class="fas fa-sign-in-alt"></i> Login</Link>]} /><br/>
+            <Header left={[<Link to="/InfaKart/"><i class="fas fa-home"></i> Home</Link>]} center={[]} right={[<Link to="/InfaKart/login"><i class="fas fa-sign-in-alt"></i> Login</Link>]} /><br/>
             <Rform />
             <Footer />
         </div>
