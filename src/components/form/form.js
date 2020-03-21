@@ -11,7 +11,7 @@ const form=React.memo(props=>{
         
         event.preventDefault();
         if(userRef.current.value==="user" && passwordRef.current.value==="user"){
-            props.history.replace('/dashboard')
+            props.history.replace('/InfaKart/dashboard')
         }
         else{
             alert('Invalid Credentials')
@@ -28,10 +28,10 @@ const form=React.memo(props=>{
                     <input type="textbox" ref={userRef} id="username" name="username" placeholder="username"/><br/><br/>
                     <input type="password" ref={passwordRef} id="password" name="password" placeholder="password"/><br/><br/>
                     <input type="submit" value="login"/><br/><br/>
-                    <div id="small">forgot <Link to="/link">username/password?</Link></div>
+                    <div id="small">forgot <Link to="/InfaKart/link">username/password?</Link></div>
                 </form><br/><br/>
                 <div id="bottom">
-                    <Link to="/register">create your account <i className="fas fa-arrow-right"></i></Link>
+                    <Link to="/InfaKart/register">create your account <i className="fas fa-arrow-right"></i></Link>
                 </div>
             </div>
         </div>

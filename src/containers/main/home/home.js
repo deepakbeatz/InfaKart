@@ -12,7 +12,7 @@ export default function home() {
                     <i className="fas fa-shopping-cart"></i> Keep Shopping! Keep Moving! <i className="fas fa-shopping-cart"></i><br/><br/>
                     <hr/><br/>
                     <div id="light1">Shop and win amazing offers for your deals</div><br/>
-                    <Link type="button" id="button1" to="/login"> Start Shopping! </Link>
+                    <Link type="button" id="button1" to="/InfaKart/login"> Start Shopping! </Link>
                 </div>
             </section>
         </div>
