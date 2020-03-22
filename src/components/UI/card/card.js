@@ -1,7 +1,7 @@
 import React from 'react'
 import './card.css'
 
-const card=React.memo((props)=> {
+const card=(props)=> {
 
     const submitHandler=()=>{
         alert("Item added to Kart!")
@@ -24,6 +24,6 @@ const card=React.memo((props)=> {
                 </div>
         </div>
     )
-})
+}
 
 export default card;

@@ -1,5 +1,6 @@
 import React from 'react'
 import './kart.css'
+
 export default function kart(props) {
     const resetKart=()=>{
         props.clearKart();

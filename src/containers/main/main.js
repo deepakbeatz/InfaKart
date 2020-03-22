@@ -13,8 +13,7 @@ export default function main() {
             <Route path="/InfaKart/login" exact component={login}/>
             <Route path="/InfaKart/register" exact component={register}/>
             <Route path="/InfaKart/link" exact component={flink}/>
-            <Route path="/InfaKart/dashboard" exact component={dashboard}/>
-            <Route path="/InfaKart/dashboard/category/:name" exact component={dashboard}/>
+            <Route path="/InfaKart/dashboard" component={dashboard}/>
         </div>
     )
 }
