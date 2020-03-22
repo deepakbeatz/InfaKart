@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/InfaKart/precache-manifest.f2b2c8192980bb19c140e97846b9c7c4.js"
+  "/InfaKart/precache-manifest.65b8c4776a1ff5df1e8c1eaf049b32a0.js"
 );
 
 self.addEventListener('message', (event) => {
