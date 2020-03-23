@@ -11,8 +11,8 @@ export default function kart(props) {
         alert('Your order has been Placed! Thanks for shopping with us!');
         props.clearKart();
         props.kartClose();
-        props.history.replace('/InfaKart/dashboard');
     }
+    
     const getItems=()=>{
         let sum=0;
         props.Kart.forEach(item=>{
