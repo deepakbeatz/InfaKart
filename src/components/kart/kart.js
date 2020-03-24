@@ -29,7 +29,9 @@ export default function kart(props) {
                 {getItems()[0]}
                 <b>Total: Rs. {getItems()[1]} </b>
             </div>
-            <div id="inline">{getItems()[1]!==0?<button onClick={checkOutHandler}>CheckOut</button>:null} <button onClick={props.kartClose}>GoBack</button> <button onClick={resetKart}>ClearKart</button></div>
+            <div id="buttonflex">
+                <div id="inline">{getItems()[1]!==0?<button onClick={checkOutHandler}>CheckOut</button>:null} <button onClick={props.kartClose}>GoBack</button> <button onClick={resetKart}>ClearKart</button></div>
+            </div>   
         </div>
     </div>
     )

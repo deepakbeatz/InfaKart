@@ -82,7 +82,7 @@ const dashboard=React.memo(props=>{
         <div>
             <KartC kartClose={kartClose} clearKart={clearKart} Kart={Kart}/>
             <Sidebar />
-            <Header left={[<Link to="#" onClick={openNav}><i id="sb1" className="fas fa-bars"></i> </Link>]} center={[]} right={[<Link to="#" onClick={kartOpen}><i className="fas fa-shopping-cart"></i> My Cart </Link>," | ",<Link to="/InfaKart/"> <i className="fas fa-sign-out-alt"></i> SignOut</Link>]} /><br/><br/><br/>
+            <Header left={[<Link to="#" onClick={openNav}><i id="sb1" className="fas fa-bars"></i> </Link>]} center={[]} right={[<Link to="#" onClick={kartOpen}><i className="fas fa-shopping-cart"></i> My Cart </Link>," | ",<Link to="/InfaKart/dashboard"> <i className="fas fa-sign-out-alt"></i> SignOut</Link>]} /><br/><br/><br/>
             {content}
         </div>
     )

@@ -21,7 +21,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "homepage": "http://deepakbeatz.github.io/InfaKart/",
+  "homepage": "http://deepakbeatz.github.io/InfaKart/dashboard",
   "eslintConfig": {
     "extends": "react-app"
   },
