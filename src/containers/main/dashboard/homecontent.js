@@ -5,7 +5,7 @@ import Box from '../../../components/UI/box/box'
 export default function homecontent(props) {
     return (
         <div className="homeContent">
-            <Box category="Best Offers!">
+            <Box category="Trending Now!">
                 <Card itemName="LED Light" itemSupplier="Philips" originalCost="200" actualCost="100" value={{"itemname":"LED Light","supplier":"Philips","originalcost":200,"actualcost":100,"key":"h101" }} Kart={props.Kart} setKart={props.setKart} />
                 <Card itemName="Trimmer" itemSupplier="Philips"  originalCost="1100" actualCost="700" value={{"itemname":"Trimmer","supplier":"Philips","originalcost":1100,"actualcost":700,"key":"h102" }} Kart={props.Kart} setKart={props.setKart} />
                 <Card itemName="SmartWatch" itemSupplier="Muzili"  originalCost="4299" actualCost="3299" value={{"itemname":"SmartWatch","supplier":"Muzili","originalcost":4299,"actualcost":3299,"key":"h103" }} Kart={props.Kart} setKart={props.setKart} />

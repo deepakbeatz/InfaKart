@@ -1,0 +1,9 @@
+#sb1{
+    border: rgb(122, 122, 122) solid 1px;
+    padding:7px;
+    width:25px;
+}
+
+#sb1:hover{
+    border: rgb(48, 48, 48) solid 1px;
+}
