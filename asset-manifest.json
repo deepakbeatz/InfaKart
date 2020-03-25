@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/InfaKart/static/css/main.f5f9c659.chunk.css",
-    "main.js": "/InfaKart/static/js/main.09becc6e.chunk.js",
-    "main.js.map": "/InfaKart/static/js/main.09becc6e.chunk.js.map",
+    "main.css": "/InfaKart/static/css/main.788ef4ca.chunk.css",
+    "main.js": "/InfaKart/static/js/main.d185328d.chunk.js",
+    "main.js.map": "/InfaKart/static/js/main.d185328d.chunk.js.map",
     "runtime-main.js": "/InfaKart/static/js/runtime-main.e3513e68.js",
     "runtime-main.js.map": "/InfaKart/static/js/runtime-main.e3513e68.js.map",
-    "static/js/2.50f5848d.chunk.js": "/InfaKart/static/js/2.50f5848d.chunk.js",
-    "static/js/2.50f5848d.chunk.js.map": "/InfaKart/static/js/2.50f5848d.chunk.js.map",
+    "static/js/2.23431a3d.chunk.js": "/InfaKart/static/js/2.23431a3d.chunk.js",
+    "static/js/2.23431a3d.chunk.js.map": "/InfaKart/static/js/2.23431a3d.chunk.js.map",
     "index.html": "/InfaKart/index.html",
-    "precache-manifest.3483983088e246e652f93bde64009fea.js": "/InfaKart/precache-manifest.3483983088e246e652f93bde64009fea.js",
+    "precache-manifest.1cbf9fd515be724c33d0ada2ad9fb303.js": "/InfaKart/precache-manifest.1cbf9fd515be724c33d0ada2ad9fb303.js",
     "service-worker.js": "/InfaKart/service-worker.js",
-    "static/css/main.f5f9c659.chunk.css.map": "/InfaKart/static/css/main.f5f9c659.chunk.css.map",
-    "static/js/2.50f5848d.chunk.js.LICENSE.txt": "/InfaKart/static/js/2.50f5848d.chunk.js.LICENSE.txt"
+    "static/css/main.788ef4ca.chunk.css.map": "/InfaKart/static/css/main.788ef4ca.chunk.css.map",
+    "static/js/2.23431a3d.chunk.js.LICENSE.txt": "/InfaKart/static/js/2.23431a3d.chunk.js.LICENSE.txt",
+    "static/media/loading.gif": "/InfaKart/static/media/loading.49510797.gif"
   },
   "entrypoints": [
     "static/js/runtime-main.e3513e68.js",
-    "static/js/2.50f5848d.chunk.js",
-    "static/css/main.f5f9c659.chunk.css",
-    "static/js/main.09becc6e.chunk.js"
+    "static/js/2.23431a3d.chunk.js",
+    "static/css/main.788ef4ca.chunk.css",
+    "static/js/main.d185328d.chunk.js"
   ]
 }
