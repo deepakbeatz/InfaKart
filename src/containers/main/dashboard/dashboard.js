@@ -1,4 +1,4 @@
-import React,{useState,useEffect,useCallback} from 'react'
+import React,{useState,useEffect,useCallback,useReducer} from 'react'
 import {Link} from 'react-router-dom'
 import Card from '../../../components/UI/card/card'
 import Box from '../../../components/UI/box/box'
@@ -6,17 +6,42 @@ import Header from '../../../components/header/header'
 import Sidebar from '../../../components/sidebar/sidebar'
 import KartC from '../../../components/kart/kart'
 import Homecontent from './homecontent'
+import logo from '../../../files/gifs/loading.gif'
 
 import './dashboard.css'
 import axios from 'axios'
 
+const httpreducer=(currentHttp,action)=>{
+    switch(action.type){
+        case 'REQUEST':
+            return {loading:true}
+        
+        case 'RESPONSE':
+            return {loading:false}
+
+        default:
+            throw new Error("Shouldn't have reached here!")
+    }
+}
+
 const dashboard=React.memo(props=>{
     const {location}=props
+
+    const [http,httpDispatch]=useReducer(httpreducer,{})
 
 
     const [content,setContent]=useState([])
     const [Kart,setKart]=useState([])
+    
 
+    const loadHandler=(status)=>{
+        if(status){
+            return <div id="backdrop1"><div id="loader"><img src={logo} alt="loading...." width="6%" min-width="150px"/></div></div>;
+        }
+        else{
+            return null;
+        }
+    }
     const openNav=()=> {
         document.getElementById("mySidenav").style.width = "270px";
       }
@@ -36,6 +61,8 @@ const dashboard=React.memo(props=>{
     }
     const getContent=useCallback(()=>{
         let category=location.pathname.split('/').pop()
+
+        httpDispatch({type:'REQUEST'});
 
         if(category==="dashboard"){
             category="Best Offers!"
@@ -59,7 +86,8 @@ const dashboard=React.memo(props=>{
             </Box>
             
             )
-            }).then(res=>{ 
+            }).then(res=>{
+            httpDispatch({type:'RESPONSE'})
 
             if(category==="Best Offers!"){
             setContent([res,<br/>,<Homecontent Kart={Kart} setKart={setKart} />])
@@ -72,7 +100,7 @@ const dashboard=React.memo(props=>{
             })
             
         }
-        ,[location.pathname,Kart])
+        ,[location.pathname,Kart,httpDispatch])
     
     useEffect(()=>{
         getContent()
@@ -80,10 +108,11 @@ const dashboard=React.memo(props=>{
 
     return (
         <div>
+            {loadHandler(http.loading)}
             <KartC kartClose={kartClose} clearKart={clearKart} Kart={Kart}/>
             <Sidebar />
             <Header left={[<Link to="#" onClick={openNav}><i id="sb1" className="fas fa-bars"></i> </Link>]} center={[]} right={[<Link to="#" onClick={kartOpen}><i className="fas fa-shopping-cart"></i> My Cart </Link>," | ",<Link to="/InfaKart/dashboard"> <i className="fas fa-sign-out-alt"></i> SignOut</Link>]} /><br/><br/><br/>
-            {content}
+                {content}
         </div>
     )
 })
