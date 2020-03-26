@@ -12,8 +12,8 @@
     position: relative;
     left:0%;
     width:48%;
-    top:0%;
-    border-right: black solid 1px;  
+    top:0%;  
+    border-right: black solid 1px;
     align-items: center;
 }
 
@@ -21,7 +21,8 @@
     display: inline-block;
     position: relative; 
     top:0%;
-    width:48%;  
+    width:48%; 
+    padding:1%; 
 }
 
 #striked{
@@ -46,5 +47,6 @@ button:hover{
 #card:hover{
     transform: scale(1.2);
 }
+
 
 

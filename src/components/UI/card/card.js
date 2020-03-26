@@ -17,9 +17,9 @@ const card=(props)=> {
                     <button onClick={submitHandler}>Buy Now!</button>
                 </div>
                 <div id="cright">
-                    <h2>
+                    <h3>
                         {props.itemName}
-                    </h2>
+                    </h3>
                     by {props.itemSupplier}
                 </div>
         </div>

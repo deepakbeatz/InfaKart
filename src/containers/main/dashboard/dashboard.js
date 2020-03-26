@@ -7,6 +7,7 @@ import Sidebar from '../../../components/sidebar/sidebar'
 import KartC from '../../../components/kart/kart'
 import Homecontent from './homecontent'
 import logo from '../../../files/gifs/loading.gif'
+import Home from '../../main/home/home'
 
 import './dashboard.css'
 import axios from 'axios'
@@ -36,7 +37,7 @@ const dashboard=React.memo(props=>{
 
     const loadHandler=(status)=>{
         if(status){
-            return <div id="backdrop1"><div id="loader"><img src={logo} alt="loading...." width="6%" min-width="150px"/></div></div>;
+            return <div id="backdrop1"><div id="loader"><img src={logo} alt="loading...." width="90px" /></div></div>;
         }
         else{
             return null;
@@ -61,10 +62,11 @@ const dashboard=React.memo(props=>{
     }
     const getContent=useCallback(()=>{
         let category=location.pathname.split('/').pop()
+        // console.log(location.pathname.split('/'))
 
         httpDispatch({type:'REQUEST'});
 
-        if(category==="dashboard"){
+        if(category==="dashboard" || category==="" || category==="InfaKart"){
             category="Best Offers!"
         }
 
@@ -89,8 +91,8 @@ const dashboard=React.memo(props=>{
             }).then(res=>{
             httpDispatch({type:'RESPONSE'})
 
-            if(category==="Best Offers!"){
-            setContent([res,<br/>,<Homecontent Kart={Kart} setKart={setKart} />])
+            if(category==="Best Offers!" || category==="" || category==="InfaKart"){
+            setContent([<br/>,<Home />,<br/>,res,<br/>,<Homecontent Kart={Kart} setKart={setKart} />])
             }
 
             else{
@@ -111,7 +113,7 @@ const dashboard=React.memo(props=>{
             {loadHandler(http.loading)}
             <KartC kartClose={kartClose} clearKart={clearKart} Kart={Kart}/>
             <Sidebar />
-            <Header left={[<Link to="#" onClick={openNav}><i id="sb1" className="fas fa-bars"></i> </Link>]} center={[]} right={[<Link to="#" onClick={kartOpen}><i className="fas fa-shopping-cart"></i> My Cart </Link>," | ",<Link onClick={clearKart} to="/InfaKart/"> <i className="fas fa-sign-out-alt"></i> SignOut</Link>]} /><br/><br/><br/>
+            <Header left={[<Link to="#" onClick={openNav}><i id="sb1" className="fas fa-bars"></i> </Link>]} center={[]} right={[<Link to="#" onClick={kartOpen}><i className="fas fa-shopping-cart"></i> My Cart </Link>," | ",<Link onClick={clearKart} to="/InfaKart/dashboard"> <i className="fas fa-sign-out-alt"></i> SignOut</Link>]} /><br/><br/><br/>
                 {content}
         </div>
     )
