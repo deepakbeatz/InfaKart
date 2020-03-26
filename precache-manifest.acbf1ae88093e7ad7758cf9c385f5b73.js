@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7ed79f2e374b7b060aedd3cc65c3808c",
+    "revision": "00eac587bac3c7f589e12f3c6024c8da",
     "url": "/InfaKart/index.html"
   },
   {
-    "revision": "bb7032c9ac063ad5b428",
-    "url": "/InfaKart/static/css/main.a5b77142.chunk.css"
+    "revision": "534840dd7f11e7d4a4c2",
+    "url": "/InfaKart/static/css/main.9c207fe3.chunk.css"
   },
   {
     "revision": "4542268e236de030a364",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/InfaKart/static/js/2.23431a3d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "bb7032c9ac063ad5b428",
+    "revision": "534840dd7f11e7d4a4c2",
     "url": "/InfaKart/static/js/main.4c6c3d77.chunk.js"
   },
   {
