@@ -7,6 +7,7 @@ export default function header(props) {
             <header>
                 <div className="left">
                     {props.left[0]}
+                    {props.left[1]}
                 </div>
                 <div className="center">
                     {props.center[0]}
