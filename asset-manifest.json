@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/InfaKart/static/css/main.9c207fe3.chunk.css",
-    "main.js": "/InfaKart/static/js/main.4c6c3d77.chunk.js",
-    "main.js.map": "/InfaKart/static/js/main.4c6c3d77.chunk.js.map",
+    "main.css": "/InfaKart/static/css/main.3b728cd1.chunk.css",
+    "main.js": "/InfaKart/static/js/main.722448ec.chunk.js",
+    "main.js.map": "/InfaKart/static/js/main.722448ec.chunk.js.map",
     "runtime-main.js": "/InfaKart/static/js/runtime-main.e3513e68.js",
     "runtime-main.js.map": "/InfaKart/static/js/runtime-main.e3513e68.js.map",
     "static/js/2.23431a3d.chunk.js": "/InfaKart/static/js/2.23431a3d.chunk.js",
     "static/js/2.23431a3d.chunk.js.map": "/InfaKart/static/js/2.23431a3d.chunk.js.map",
     "index.html": "/InfaKart/index.html",
-    "precache-manifest.acbf1ae88093e7ad7758cf9c385f5b73.js": "/InfaKart/precache-manifest.acbf1ae88093e7ad7758cf9c385f5b73.js",
+    "precache-manifest.7038cddf330387614375d68cee4bb8f2.js": "/InfaKart/precache-manifest.7038cddf330387614375d68cee4bb8f2.js",
     "service-worker.js": "/InfaKart/service-worker.js",
-    "static/css/main.9c207fe3.chunk.css.map": "/InfaKart/static/css/main.9c207fe3.chunk.css.map",
+    "static/css/main.3b728cd1.chunk.css.map": "/InfaKart/static/css/main.3b728cd1.chunk.css.map",
     "static/js/2.23431a3d.chunk.js.LICENSE.txt": "/InfaKart/static/js/2.23431a3d.chunk.js.LICENSE.txt",
     "static/media/loading.gif": "/InfaKart/static/media/loading.49510797.gif"
   },
   "entrypoints": [
     "static/js/runtime-main.e3513e68.js",
     "static/js/2.23431a3d.chunk.js",
-    "static/css/main.9c207fe3.chunk.css",
-    "static/js/main.4c6c3d77.chunk.js"
+    "static/css/main.3b728cd1.chunk.css",
+    "static/js/main.722448ec.chunk.js"
   ]
 }
