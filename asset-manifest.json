@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/InfaKart/static/css/main.be12b5ab.chunk.css",
-    "main.js": "/InfaKart/static/js/main.80f2d091.chunk.js",
-    "main.js.map": "/InfaKart/static/js/main.80f2d091.chunk.js.map",
+    "main.js": "/InfaKart/static/js/main.1a5e33cb.chunk.js",
+    "main.js.map": "/InfaKart/static/js/main.1a5e33cb.chunk.js.map",
     "runtime-main.js": "/InfaKart/static/js/runtime-main.e3513e68.js",
     "runtime-main.js.map": "/InfaKart/static/js/runtime-main.e3513e68.js.map",
     "static/js/2.89838434.chunk.js": "/InfaKart/static/js/2.89838434.chunk.js",
     "static/js/2.89838434.chunk.js.map": "/InfaKart/static/js/2.89838434.chunk.js.map",
     "index.html": "/InfaKart/index.html",
-    "precache-manifest.8ca462a34a30e39d09381f9941b37079.js": "/InfaKart/precache-manifest.8ca462a34a30e39d09381f9941b37079.js",
+    "precache-manifest.8b23aeca243aa7e349a1a0c40df13d22.js": "/InfaKart/precache-manifest.8b23aeca243aa7e349a1a0c40df13d22.js",
     "service-worker.js": "/InfaKart/service-worker.js",
     "static/css/main.be12b5ab.chunk.css.map": "/InfaKart/static/css/main.be12b5ab.chunk.css.map",
     "static/js/2.89838434.chunk.js.LICENSE.txt": "/InfaKart/static/js/2.89838434.chunk.js.LICENSE.txt",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.e3513e68.js",
     "static/js/2.89838434.chunk.js",
     "static/css/main.be12b5ab.chunk.css",
-    "static/js/main.80f2d091.chunk.js"
+    "static/js/main.1a5e33cb.chunk.js"
   ]
 }
