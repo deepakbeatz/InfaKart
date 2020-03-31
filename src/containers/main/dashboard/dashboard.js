@@ -43,6 +43,7 @@ const Dashboard=(props)=>{
     const [KartContent,setKartContent]=useState([])
 
     const [notif,setNotif]=useState([])
+
     const signOutHandler=()=>{
         Auth.logout();
         renderN("success","Logged out successfully!")
@@ -104,10 +105,7 @@ const Dashboard=(props)=>{
     const showLogin=()=>{
         document.getElementById('backdrop2').style.display="block";
     }
-
-
-    
-
+ 
     const getContent=useCallback(()=>{
         let category=location.pathname.split('/').pop()
         
@@ -160,7 +158,6 @@ const Dashboard=(props)=>{
         }   
     ,[location.pathname,KartContent,httpDispatch,renderN])
 
-
     useEffect(()=>{
         getContent()
     }, [getContent])
@@ -173,7 +170,7 @@ const Dashboard=(props)=>{
             <LoginForm showReg={showReg} renderN={renderN}/>
             <RegistrationForm/>
             <Kart kartClose={kartClose} clearKart={clearKart} KartContent={KartContent} renderN={renderN}/>
-            <Sidebar />
+            <Sidebar  />
             <Header left={[<div onClick={openNav}><i id="sb1" className="fas fa-bars"></i><b id="l3"> InfaKart</b></div>]} center={[]} right={setHeader()} /><br/><br/><br/>
             <div id="dcontent">
                 {content}
