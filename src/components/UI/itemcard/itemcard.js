@@ -1,6 +1,6 @@
 import React,{useContext} from 'react'
 import {withRouter} from 'react-router-dom'
-import './card.css'
+import './itemcard.css'
 import {AuthContext} from '../../../context/AuthContext/AuthContext'
 import ItemDescription from '../../itemdescription/itemdescription'
 

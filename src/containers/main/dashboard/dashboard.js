@@ -1,7 +1,7 @@
 import React,{useState,useEffect,useCallback,useReducer,useContext} from 'react'
 import {Link} from 'react-router-dom'
-import Card from '../../../components/UI/card/card'
-import Box from '../../../components/UI/box/box'
+import ItemCard from '../../../components/UI/itemcard/itemcard'
+import Shell from '../../../components/UI/shell/shell'
 import Header from '../../../components/header/header'
 import Footer from '../../../components/footer/footer'
 import Sidebar from '../../../components/sidebar/sidebar'
@@ -129,16 +129,16 @@ const Dashboard=(props)=>{
             const final=[]
                 
             return(
-            <Box category={category}>
+            <Shell category={category}>
             {
             res.forEach(item=>
                 {
-                final.push(<Card itemName={item.itemname} itemSupplier={item.supplier} originalCost={item.originalcost} actualCost={item.actualcost} key={item.key+Math.random().toString()} value={item} setKartContent={setKartContent} KartContent={KartContent} setContent={setContent} renderN={renderN}/>)
+                final.push(<ItemCard itemName={item.itemname} itemSupplier={item.supplier} originalCost={item.originalcost} actualCost={item.actualcost} key={item.key+Math.random().toString()} value={item} setKartContent={setKartContent} KartContent={KartContent} setContent={setContent} renderN={renderN}/>)
                 }
             ) 
             }
             {final}
-            </Box>
+            </Shell>
             
             )
             }).then(res=>{
