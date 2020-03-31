@@ -12,8 +12,8 @@
 #loader{
     position: relative;
     top:35%;
-    left:46%;
-    right:46%;
+    left:47%;
+    right:47%;
     z-index: 5;
 }
 
@@ -31,3 +31,43 @@
     font-size: large;
 }
 
+header  a{
+    text-decoration: none;
+    color:rgb(73, 73, 73)
+}
+
+header  a:active{
+    color:rgb(73, 73, 73)
+}
+
+header  a:hover{
+    color: black;
+}
+
+Link{
+    color:rgb(73, 73, 73) ;
+}
+
+#rform{
+    display: none;
+}
+
+#dcontent{
+    position: relative;
+    width:100%;
+    height:100%;
+}
+
+#viewport{
+    position: absolute;
+    width:100%;
+}
+
+@media only screen and (max-width:600px){
+    #loader{
+        position: relative;
+        top:35%;
+        left:40%;
+        z-index: 5;
+    }
+}

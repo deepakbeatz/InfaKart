@@ -9,7 +9,7 @@ export default function sidebar() {
 
     return (
         <div className="sidebar" id="mySidenav">
-            <Link to="#" className="closebtn" onClick={closeNav}>&times;</Link>
+            <div className="closebtn" onClick={closeNav}>&times;</div>
             <Link to="/InfaKart/dashboard">Home</Link><br/>
             <Link to="/InfaKart/dashboard/category/clothing">Clothing</Link><br/>
             <Link to="/InfaKart/dashboard/category/mobiles&computers">Mobiles & Computers</Link><br/>

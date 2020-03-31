@@ -1,0 +1,47 @@
+#dbox{
+    position: absolute;
+    text-align: center;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.3);
+    padding:2%;
+    width:86%;
+    left:5%;
+    z-index: 1;
+}
+
+#dleft{
+    position: relative;
+    left:0%;
+    width:48%;
+    margin:0;
+    top:0%;
+    display: inline-block;
+}
+
+#dright{
+    position: relative;
+    width:48%;
+    border-left: black solid 1px;
+    margin:0;
+    top:0%;
+    display: inline-block;
+    padding-right:2%;
+}
+
+#desc{
+    text-align: left;
+    padding-left: 20px;
+}
+
+#bbt3{
+    position: relative;
+    width: 70%;
+    background-color: orange;
+    border: orange solid 1px;
+    color: white;
+    padding: 5px;
+}
+
+#bbt3:hover{
+    background-color:#c7381f;
+    border: #c7381f solid 1px;
+}

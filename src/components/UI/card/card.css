@@ -2,9 +2,10 @@
     background-color: white;
     box-shadow: 0px 2px 8px rgba(0,0,0,0.3);
     text-align: center;
-    padding: 2%;
+    padding: 1%;
     width:200px;
     transition: transform .09s;
+    cursor: pointer;
 }
 
 #card #cleft{
@@ -21,6 +22,7 @@
     display: inline-block;
     position: relative; 
     top:0%;
+    
     width:48%; 
     padding:1%; 
 }
@@ -29,17 +31,17 @@
     text-decoration: line-through;
 }
 
-button{
+#bbt1{
     position: relative;
     width: 70%;
     background-color: orange;
     border: orange solid 1px;
     color: white;
-    height:30px;
+    
     padding: 2px;
 }
 
-button:hover{
+#bbt1:hover{
     background-color:#c7381f;
     border: #c7381f solid 1px;
 }
@@ -47,6 +49,7 @@ button:hover{
 #card:hover{
     transform: scale(1.2);
 }
+
 
 
 
