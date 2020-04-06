@@ -56,7 +56,7 @@ const Dashboard=(props)=>{
             return [<Link to="#" onClick={kartOpen}><i className="fas fa-shopping-cart"></i> My Cart </Link>," | ",<Link onClick={signOutHandler} to="/InfaKart/dashboard"> <i className="fas fa-sign-out-alt"></i> SignOut</Link>]
         }
         else{
-            return [<Link to="#" onClick={showLogin}><i className="fas fa-sign-in-alt"></i> Sign In</Link>," | ",<Link to="#"><i className="fas fa-user-plus"></i> Register</Link>]
+            return [<Link to="#" onClick={showLogin}><i className="fas fa-sign-in-alt"></i> Sign In</Link>," | ",<Link to="#" onClick={showReg}><i className="fas fa-user-plus"></i> Register</Link>]
         }
     }
 
