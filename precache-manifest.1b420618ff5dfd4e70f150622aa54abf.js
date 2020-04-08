@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9c84ab1be7123e127df868122407e802",
+    "revision": "e3bc71c0d5b3387abccad9d4e72987c7",
     "url": "/InfaKart/index.html"
   },
   {
-    "revision": "d3799d2127a56ed929e8",
-    "url": "/InfaKart/static/css/main.be12b5ab.chunk.css"
+    "revision": "ff1c618347fe283783f4",
+    "url": "/InfaKart/static/css/main.ba04c262.chunk.css"
   },
   {
-    "revision": "671b292f2108bdeb73b3",
-    "url": "/InfaKart/static/js/2.89838434.chunk.js"
+    "revision": "8cb979065d0dd023b8da",
+    "url": "/InfaKart/static/js/2.7c65e14d.chunk.js"
   },
   {
     "revision": "f231859d6585c4cd5f80c344783ed269",
-    "url": "/InfaKart/static/js/2.89838434.chunk.js.LICENSE.txt"
+    "url": "/InfaKart/static/js/2.7c65e14d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d3799d2127a56ed929e8",
-    "url": "/InfaKart/static/js/main.9d33c290.chunk.js"
+    "revision": "ff1c618347fe283783f4",
+    "url": "/InfaKart/static/js/main.3141f891.chunk.js"
   },
   {
     "revision": "14bcb4e1a4c171ab4a69",
