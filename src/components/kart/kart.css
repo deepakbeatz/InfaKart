@@ -55,3 +55,48 @@
     background-color:#c7381f;
     border: #c7381f solid 1px;
 }
+
+
+#plus{
+    display: inline;
+    margin:5px;
+    cursor: pointer;
+    background-color: green;
+    color: white;
+    padding-top:0.5px;
+    padding-bottom:0.5px;
+    padding-left:4px;
+    padding-right:4px;
+    font-weight: bold;
+}
+
+#minus{
+    position: relative;
+    display: inline;
+    margin:1px;
+    cursor: pointer;
+    background-color: rgb(177, 0, 0);
+    font-weight: bold;
+    color: white;
+    padding-top:0.5px;
+    padding-bottom:0.5px;
+    padding-left:6px;
+    padding-right:6px;
+}
+
+#plus:hover{
+    background-color: rgb(6, 184, 6);
+}
+
+#minus:hover{
+    background-color:red;
+}
+
+
+#fitem{
+    display: inline;
+}
+
+.listitems #flist{
+    margin:5px
+}

@@ -45,3 +45,26 @@
     background-color:#c7381f;
     border: #c7381f solid 1px;
 }
+
+#plus{
+    display: inline;
+    margin:5px;
+    cursor: pointer;
+    background-color: green;
+    color: white;
+    padding:4px;
+}
+
+#minus{
+    position: relative;
+    display: inline;
+    margin:1px;
+    cursor: pointer;
+    background-color: red;
+    font-weight: bold;
+    color: white;
+    padding-top:4px;
+    padding-bottom:4px;
+    padding-left:6px;
+    padding-right:6px;
+}

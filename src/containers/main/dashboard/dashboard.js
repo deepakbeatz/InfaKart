@@ -131,7 +131,7 @@ const Dashboard=(props)=>{
             {
             res.forEach(item=>
                 {
-                final.push(<ItemCard itemName={item.itemname} itemSupplier={item.supplier} originalCost={item.originalcost} actualCost={item.actualcost} key={item.key+Math.random().toString()} value={item} setKartContent={setKartContent} KartContent={KartContent} setContent={setContent} renderN={renderN}/>)
+                final.push(<ItemCard itemName={item.itemname} itemSupplier={item.supplier} originalCost={item.originalcost} actualCost={item.actualcost} key={item.key} value={item} setKartContent={setKartContent} KartContent={KartContent} setContent={setContent} renderN={renderN}/>)
                 }
             ) 
             }
@@ -169,7 +169,7 @@ const Dashboard=(props)=>{
             <Notification type={notif[0]} message={notif[1]} nHandler={nHandler}/>
             <LoginForm showReg={showReg} renderN={renderN}/>
             <RegistrationForm/>
-            <Kart kartClose={kartClose} clearKart={clearKart} KartContent={KartContent} renderN={renderN}/>
+            <Kart kartClose={kartClose} clearKart={clearKart} KartContent={KartContent} renderN={renderN} setKartContent={setKartContent}/>
             <Sidebar  />
             <Header left={[<div onClick={openNav}><i id="sb1" className="fas fa-bars"></i><b id="l3"> InfaKart</b></div>]} center={[]} right={setHeader()} /><br/><br/><br/>
             <div id="dcontent">

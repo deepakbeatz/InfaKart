@@ -2,7 +2,49 @@ import React from 'react'
 import {withRouter} from 'react-router-dom'
 import './kart.css'
 
-const kart=(props)=>{
+const Kart=(props)=>{
+
+    const plusHandler=(key)=>{
+        var temp=[]
+        var updatedItem={}
+        for(var i=0;i<props.KartContent.length;i++){
+            if(props.KartContent[i].key===key){
+                updatedItem={...props.KartContent[i],quantity:props.KartContent[i].quantity+1}
+            }
+            else{
+                temp.push(props.KartContent[i])
+            }
+            props.setKartContent([...temp,updatedItem])
+        }
+    }
+
+    const minusHandler=(key)=>{
+        var temp=[]
+        var updatedItem={}
+        var deleteFlag=0;
+        for(var i=0;i<props.KartContent.length;i++){
+
+            if(props.KartContent[i].key===key){
+                if(props.KartContent[i].quantity!==1){
+                    updatedItem={...props.KartContent[i],quantity:props.KartContent[i].quantity-1}
+                }
+                else{
+                    deleteFlag=1;
+                }
+            }
+            else{
+                temp.push(props.KartContent[i])
+            }
+            if(deleteFlag!==1){
+                props.setKartContent([...temp,updatedItem])
+            }
+            else{
+                props.setKartContent([...temp])
+            }
+            
+        }
+    }
+
     const resetKart=()=>{
         props.clearKart();
         props.kartClose();
@@ -18,18 +60,20 @@ const kart=(props)=>{
     const getItems=()=>{
         let sum=0;
         props.KartContent.forEach(item=>{
-            sum+=item.actualcost;
+            sum+=item.actualcost*item.quantity;
         })
-        return [props.KartContent.map(item=><li key={item.key+Math.random().toString()}>{item.supplier} {item.itemname} at Rs. {item.actualcost}</li>),sum]
+        return [props.KartContent.map(item=><li id="fitem" key={item.key}>{item.supplier} {item.itemname} (x<b>{item.quantity}</b>) at Rs. {item.actualcost*item.quantity}</li>),sum]
     }
+    
     return (
-    <div id="backdrop" onClick={props.kartClose}>
+    <div id="backdrop">
+        <div id="closeButton"  onClick={props.kartClose}>&times;</div>
         <div id="kart">
             <i className="fas fa-shopping-cart"></i>My Kart<i className="fas fa-shopping-cart"></i>
             <hr/>
             <div className="listitems">
-                {getItems()[0]}
-                <b>Total: Rs. {getItems()[1]} </b>
+                {getItems()[0].map(item=><div id="flist">{item}<div id="plus" onClick={()=>{plusHandler(item.key)}}>+</div><div id="minus" onClick={()=>{minusHandler(item.key)}}>-</div></div>)}
+                <b id="flist">Total: Rs. {getItems()[1]} </b>
             </div>
             <div id="buttonflex">
                 <div id="inline">{getItems()[1]!==0?<button id="bbt2" onClick={checkOutHandler}>CheckOut</button>:null} <button id="bbt2" onClick={props.kartClose}>GoBack</button> <button id="bbt2" onClick={resetKart}>ClearKart</button></div>
@@ -40,4 +84,4 @@ const kart=(props)=>{
 }
 
 
-export default withRouter(kart);
+export default withRouter(Kart);

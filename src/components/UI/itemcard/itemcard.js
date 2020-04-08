@@ -14,10 +14,10 @@ const Card=(props)=> {
         props.history.push(props.location.pathname+'/item?ItemName='+props.itemName+'&Supplier='+props.itemSupplier+'&ActualCost='+props.actualCost+'&OriginalCost='+props.originalCost)
     }
 
-    const submitHandler=()=>{
+    const submitHandler=(quantity)=>{
         if(Auth.isAuth){
             props.renderN("success","Item added to the kart!")
-            props.setKartContent([...props.KartContent,props.value])
+            props.setKartContent([...props.KartContent,{...props.value,quantity:quantity}])
             props.history.replace(props.location.pathname)
         }
         else{
