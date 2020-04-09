@@ -21,7 +21,7 @@ const ItemDescription=(props)=> {
                 Ex aeque graece dicunt sed, ex sit amet prima. Ea eum porro euismod inimicus, ius cu wisi soluta numquam, mei etiam inciderint ad.
                 </div><br/>
                 <div id="qbox">Quantity:<b>{quantity}</b><div id="plus" onClick={()=>{setQuantity(quantity+1)}}>+</div><div id="minus" onClick={()=>{if(quantity>1){setQuantity(quantity-1)}}}>-</div></div><br/>
-                <button id="bbt3" onClick={()=>{props.submitHandler(quantity)}}>Add to Kart</button>
+                <button id="bbt3" onClick={()=>{props.submitHandler(quantity,props.item.key)}}>Add to Kart</button>
             </div>
         </div>
         

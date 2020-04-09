@@ -10,39 +10,30 @@ const Kart=(props)=>{
         for(var i=0;i<props.KartContent.length;i++){
             if(props.KartContent[i].key===key){
                 updatedItem={...props.KartContent[i],quantity:props.KartContent[i].quantity+1}
+                temp.splice(i, 0, updatedItem);
             }
             else{
                 temp.push(props.KartContent[i])
             }
-            props.setKartContent([...temp,updatedItem])
         }
+        props.setKartContent(temp)
     }
 
     const minusHandler=(key)=>{
         var temp=[]
         var updatedItem={}
-        var deleteFlag=0;
         for(var i=0;i<props.KartContent.length;i++){
-
             if(props.KartContent[i].key===key){
                 if(props.KartContent[i].quantity!==1){
                     updatedItem={...props.KartContent[i],quantity:props.KartContent[i].quantity-1}
-                }
-                else{
-                    deleteFlag=1;
+                    temp.splice(i, 0, updatedItem);
                 }
             }
             else{
                 temp.push(props.KartContent[i])
             }
-            if(deleteFlag!==1){
-                props.setKartContent([...temp,updatedItem])
-            }
-            else{
-                props.setKartContent([...temp])
-            }
-            
         }
+        props.setKartContent(temp)
     }
 
     const resetKart=()=>{
@@ -64,7 +55,7 @@ const Kart=(props)=>{
         })
         return [props.KartContent.map(item=><li id="fitem" key={item.key}>{item.supplier} {item.itemname} (x<b>{item.quantity}</b>) at Rs. {item.actualcost*item.quantity}</li>),sum]
     }
-    
+
     return (
     <div id="backdrop">
         <div id="closeButton"  onClick={props.kartClose}>&times;</div>

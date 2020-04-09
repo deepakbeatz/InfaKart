@@ -92,7 +92,7 @@ const Dashboard=(props)=>{
     }
     
     const renderN=useCallback((type,message)=>{
-        setTimeout(()=>{document.getElementById("nbox").style.display="none";}, 1800);
+        setTimeout(()=>{document.getElementById("nbox").style.display="none";}, 1500);
         setNotif([type,message]); 
         document.getElementById("nbox").style.display="block";
     },[])

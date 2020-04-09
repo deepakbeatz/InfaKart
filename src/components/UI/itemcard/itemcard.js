@@ -10,14 +10,27 @@ const Card=(props)=> {
 
 
     const CardHandler=()=>{
-        props.setContent([<br/>,<ItemDescription itemName={props.itemName} itemSupplier={props.itemSupplier} originalCost={props.originalCost} actualCost={props.actualCost} submitHandler={submitHandler} item={props.item}/>])
+        props.setContent([<br/>,<ItemDescription itemName={props.itemName} itemSupplier={props.itemSupplier} originalCost={props.originalCost} actualCost={props.actualCost} submitHandler={submitHandler} item={props.value}/>])
         props.history.push(props.location.pathname+'/item?ItemName='+props.itemName+'&Supplier='+props.itemSupplier+'&ActualCost='+props.actualCost+'&OriginalCost='+props.originalCost)
     }
 
-    const submitHandler=(quantity)=>{
+    const submitHandler=(quantity,key)=>{
         if(Auth.isAuth){
             props.renderN("success","Item added to the kart!")
-            props.setKartContent([...props.KartContent,{...props.value,quantity:quantity}])
+            var temp=[]
+            var updatedItem={}
+            for(var i=0;i<props.KartContent.length;i++){
+                if(props.KartContent[i].key===key){
+                    updatedItem={...props.KartContent[i],quantity:props.KartContent[i].quantity+quantity}
+                    props.setKartContent([...temp,updatedItem])
+                    props.history.replace(props.location.pathname)
+                    return;
+                }
+                else{
+                    temp.push(props.KartContent[i])
+                }
+            }
+            props.setKartContent([...temp,{...props.value,quantity:quantity}])
             props.history.replace(props.location.pathname)
         }
         else{
